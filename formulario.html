@@ -2,32 +2,33 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <title> Formulário de Contato </title>
+        <link rel="stylesheet" type="text/css" href="formulario.css">
+        <title>Formulario de Contato</title>
     </head>
     <body>
-        <div>
-          <h1> Entre em contato </h1>
+         <div>
+            <h1 id="titulo">Entre em contato</h1>
         </div>
+        
         <form autocomplete="off">
             <label for="Nome"><strong> Nome </strong></label><br>
-            <input type="text" id="Nome" name="Nome" required><br>
+            <input type="text" id="Nome" placeholder="fulano" name="Nome" required><br>
 
             <label for="Email"><strong> Email </strong></label><br>
-            <input type="email" id="Email" name="Email" required><br>
+            <input type="email" id="Email" placeholder="fulano@gmail.com" name="Email" required><br>
 
             <label for="Telefone"><strong> Telefone </strong></label><br>
-            <input type="number" id="Numero" name="Numero" required><br>
+            <input type="number" id="Numero" placeholder="(xx)xxxxx-xxxx" name="Numero" required><br>
 
             <label for="Assunto"><strong> Assunto </strong></label><br>
             <select id="selecione">
                 <option selected disabled value="escolha"></option>
-                <option> Reclamações </option>
-                <option> Duvidas </option>
-                <option> Falar com: </option>
+                <option>Reclamações</option>
+                <option>Duvidas</option>
             </select><br>
 
             <label for="Mensagem"><strong> Mensagem </strong></label><br>
-            <textarea id="Mensagem" name="Mensagem"></textarea><br>
+            <textarea id="Mensagem" name="Mensagem" placeholder="deixe sua opinião"></textarea><br>
 
             <button type="submit">Enviar</button><br>
         </form>
