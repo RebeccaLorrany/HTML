@@ -1,24 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
     <head>
-        <title>Formulario de Contato</title>
+        <meta charset="UTF-8">
+        <title> Formulário de Contato </title>
     </head>
     <body>
-        <h1>Entre em contato</h1>
-        <form>
-            <label for="Nome">Nome</label><br>
-            <input type="text" id="Nome" name="Nome"><br>
+        <div>
+          <h1> Entre em contato </h1>
+        </div>
+        <form autocomplete="off">
+            <label for="Nome"><strong> Nome </strong></label><br>
+            <input type="text" id="Nome" name="Nome" required><br>
 
-            <label for="Email">Email</label><br>
-            <input type="text" id="Email" name="Email"><br>
+            <label for="Email"><strong> Email </strong></label><br>
+            <input type="email" id="Email" name="Email" required><br>
 
-            <label for="Telefone">Telefone</label><br>
-            <input type="number" id="Numero" name="Numero"><br>
+            <label for="Telefone"><strong> Telefone </strong></label><br>
+            <input type="number" id="Numero" name="Numero" required><br>
 
-            <label for="Assunto">Assunto</label><br>
-            <input type="text" id="Assunto" name="Assunto"><br>
+            <label for="Assunto"><strong> Assunto </strong></label><br>
+            <select id="selecione">
+                <option selected disabled value="escolha"></option>
+                <option> Reclamações </option>
+                <option> Duvidas </option>
+                <option> Falar com: </option>
+            </select><br>
 
-            <label for="Mensagem">Mensagem</label><br>
+            <label for="Mensagem"><strong> Mensagem </strong></label><br>
             <textarea id="Mensagem" name="Mensagem"></textarea><br>
 
             <button type="submit">Enviar</button><br>
